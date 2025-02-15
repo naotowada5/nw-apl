@@ -59,7 +59,6 @@
     outline: none;
     box-sizing: border-box;
     resize: none; /* テキストエリアのリサイズを無効にする */
-    min-height: 24px; /* テキストエリアの初期高さを1行分に設定 */
     max-height: 200px; /* テキストエリアの最大高さを設定 */
     overflow-y: auto; /* 縦方向のスクロールを自動にする */
     line-height: 1px; /* 行の高さを設定 */

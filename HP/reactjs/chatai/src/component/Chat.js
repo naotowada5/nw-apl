@@ -48,6 +48,17 @@ const Chat = () => {
       return;
     }
 
+    // 入力値をメッセージリストに追加
+    setMessageList((prevList) => [
+      ...prevList,
+      { sender: "user", text: inputValue },
+    ]);
+
+    // テキストエリアをリセット
+    inputRef.current.value = "";
+    inputRef.current.style.height = "auto"; // テキストエリアの高さをリセット
+
+
     setIsLoading(true);
 
     // openaiからの返答を取得
@@ -58,19 +69,14 @@ const Chat = () => {
 
     setIsLoading(false);
 
-    // 入力値をメッセージリストに追加
+    // APIの戻り値をメッセージリストに追加
     setMessageList((prevList) => [
       ...prevList,
-      { sender: "user", text: inputValue },
       { sender: "bot", text: gptResponse.choices[0].message.content },
     ]);
 
     // console.log(inputValue);
     inputRef.current.style.lineHeight = "1px"; // 初期は1行分の高さに設定
-
-    // テキストエリアをリセット
-    inputRef.current.value = "";
-    inputRef.current.style.height = "auto"; // テキストエリアの高さをリセット
   };
 
   // 入力欄にてエンターキー押下時の処理
