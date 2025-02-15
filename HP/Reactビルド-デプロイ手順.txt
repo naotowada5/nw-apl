@@ -1,0 +1,18 @@
+・アプリのビルド
+cd /var/www/html/reactjs/dmp-com
+yarn build
+
+
+・デプロイ
+sudo apachectl stop
+cd /var/www/html
+sudo cp -pR ./reactjs/dmp-com/build/* ./
+
+sudo mv index.html react_01.html
+
+★ローカルのindex.htmlをサーバに反映
+
+sudo apachectl start
+
+※参考
+https://qiita.com/y-hys/items/9e7ea58644a5afca01c3

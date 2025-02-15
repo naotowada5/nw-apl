@@ -1,0 +1,41 @@
+.main-content {
+    background-color: aquamarine;
+    width: 95%;
+    height: 1000px;
+    margin: 10px auto;
+}
+
+.tab-wrap {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tab {
+    background-color: aliceblue;
+    width: 15%;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    margin-right: 5px;
+    color: rgb(62, 195, 247);
+    border: 2px solid rgb(62, 195, 247);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.contents-selected {
+    color: aliceblue;
+    background-color: rgb(62, 195, 247);
+}
+
+.main-wrap {
+    background-color: aliceblue;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    border: 2px solid rgb(62, 195, 247);
+    border-radius: 5px;
+}
