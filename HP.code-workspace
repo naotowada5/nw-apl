@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../work/wadawadanaodai/HP"
+		},
+		{
+			"path": "../../work/wadawadanaodai/HP/reactjs/dmp-com"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dmp-com"
+	}
+}

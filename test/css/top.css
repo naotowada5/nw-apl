@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* common*/
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+/* header */
+header {
+    text-align: center;
+    padding:10px;
+}
+
+/* nav */
+nav{
+    background-color: #f7f7f7;
+    padding-top:5px;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+}
+nav li {
+    display: table-cell;
+    min-width: 50px;
+}
+nav a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #555;
+    padding-bottom: 5px;
+}
+nav li.current{
+    border-bottom: 3px solid #f7f7f7;
+}
+nav li:hover {
+    color: #e7da66;
+    border-bottom: 3px solid #f0e475;
+}
+
+#closeBtn {
+    width: 2%;
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    user-select: none;
+    text-align: center;
+}
+
+#closeBtn:hover {
+    color: rgb(255, 98, 125);
+}
+
+/* top-content */
+.topContent{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 217, 136);
+}
+
+/* main */
+main {
+    height: 800px;
+    background-color: rgb(226, 252, 243);
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    padding: 10px;
+}
